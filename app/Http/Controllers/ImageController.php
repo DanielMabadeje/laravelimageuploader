@@ -20,6 +20,8 @@ class ImageController extends Controller
             'filename' => basename($path),
             'url' => Storage::disk('s3')->url($path)
         ]);
+
+        dd($image);
     }
 
     public function show()
